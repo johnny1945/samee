@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="markGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 32) scale(32)">
+      <stop offset="0.12" stop-color="#1D133F" />
+      <stop offset="0.64" stop-color="#060612" />
+      <stop offset="1" stop-color="#010103" />
+    </radialGradient>
+    <linearGradient id="markHighlight" x1="10" y1="11" x2="54" y2="53" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B61FF" />
+      <stop offset="0.5" stop-color="#9D71FF" />
+      <stop offset="1" stop-color="#4CE0D2" />
+    </linearGradient>
+    <linearGradient id="markEdge" x1="20" y1="54" x2="44" y2="14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#47D4F4" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#markGlow)" />
+  <path d="M32 10L50 54H44.095L38.45 40.321H25.55L19.905 54H14L32 10Z" fill="url(#markHighlight)" />
+  <path d="M25.861 39.561L32 24.821L38.139 39.561H25.861Z" fill="url(#markEdge)" opacity="0.85" />
+</svg>

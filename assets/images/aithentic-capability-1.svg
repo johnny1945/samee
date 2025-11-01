@@ -1,0 +1,22 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="capOneBg" x1="60" y1="40" x2="440" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101735" />
+      <stop offset="1" stop-color="#080E20" />
+    </linearGradient>
+    <radialGradient id="capOneGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 160) rotate(90) scale(200 260)">
+      <stop offset="0.12" stop-color="#63FFD9" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#050B16" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect x="24" y="20" width="472" height="320" rx="28" fill="url(#capOneBg)" />
+  <rect x="24" y="20" width="472" height="320" rx="28" fill="url(#capOneGlow)" />
+  <rect x="108" y="84" width="304" height="192" rx="24" fill="#0D162F" stroke="#1C3454" stroke-opacity="0.55" />
+  <rect x="140" y="118" width="140" height="12" rx="6" fill="#63FFD9" />
+  <rect x="140" y="150" width="180" height="12" rx="6" fill="#7B61FF" fill-opacity="0.42" />
+  <rect x="140" y="182" width="204" height="12" rx="6" fill="#63FFD9" fill-opacity="0.36" />
+  <rect x="140" y="214" width="156" height="12" rx="6" fill="#7B61FF" fill-opacity="0.32" />
+  <circle cx="326" cy="178" r="54" stroke="#63FFD9" stroke-opacity="0.45" stroke-width="2" />
+  <path d="M326 152L348 188H304L326 152Z" fill="#7B61FF" fill-opacity="0.35" />
+  <path d="M326 176L344 204H308L326 176Z" fill="#63FFD9" fill-opacity="0.22" />
+</svg>

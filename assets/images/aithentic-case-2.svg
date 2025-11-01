@@ -1,0 +1,25 @@
+<svg width="480" height="400" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="caseTwoBg" x1="440" y1="32" x2="40" y2="368" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#04131F" />
+      <stop offset="1" stop-color="#141B34" />
+    </linearGradient>
+    <linearGradient id="caseTwoAccent" x1="96" y1="96" x2="380" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4CE0D2" />
+      <stop offset="1" stop-color="#7B61FF" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="16" width="432" height="368" rx="32" fill="url(#caseTwoBg)" />
+  <rect x="76" y="88" width="328" height="216" rx="26" fill="#0B172A" stroke="#1E3750" stroke-opacity="0.6" />
+  <rect x="112" y="120" width="200" height="12" rx="6" fill="#4CE0D2" />
+  <rect x="112" y="148" width="160" height="12" rx="6" fill="#7B61FF" fill-opacity="0.45" />
+  <rect x="112" y="176" width="220" height="12" rx="6" fill="#4CE0D2" fill-opacity="0.42" />
+  <rect x="112" y="204" width="140" height="12" rx="6" fill="#7B61FF" fill-opacity="0.38" />
+  <rect x="112" y="232" width="200" height="12" rx="6" fill="#4CE0D2" fill-opacity="0.34" />
+  <rect x="112" y="260" width="172" height="12" rx="6" fill="#7B61FF" fill-opacity="0.32" />
+  <path d="M312 124H356C362.627 124 368 129.373 368 136V260C368 266.627 362.627 272 356 272H312C305.373 272 300 266.627 300 260V136C300 129.373 305.373 124 312 124Z" fill="#111F38" stroke="#4CE0D2" stroke-opacity="0.45" stroke-width="2" />
+  <rect x="316" y="138" width="36" height="36" rx="12" fill="#4CE0D2" fill-opacity="0.4" />
+  <rect x="316" y="184" width="36" height="36" rx="12" fill="#7B61FF" fill-opacity="0.32" />
+  <rect x="316" y="230" width="36" height="36" rx="12" fill="#4CE0D2" fill-opacity="0.28" />
+  <rect x="24" y="16" width="432" height="368" rx="32" stroke="url(#caseTwoAccent)" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="14 18" />
+</svg>

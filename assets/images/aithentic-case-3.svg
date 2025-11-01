@@ -1,0 +1,24 @@
+<svg width="480" height="400" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="caseThreeBg" x1="56" y1="48" x2="424" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0F24" />
+      <stop offset="1" stop-color="#101D33" />
+    </linearGradient>
+    <linearGradient id="caseThreeAccent" x1="120" y1="108" x2="360" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63FFD9" />
+      <stop offset="1" stop-color="#7B61FF" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="16" width="432" height="368" rx="32" fill="url(#caseThreeBg)" />
+  <rect x="90" y="96" width="300" height="208" rx="28" fill="#0E1930" stroke="#1A2F4B" stroke-opacity="0.6" />
+  <rect x="118" y="128" width="222" height="16" rx="8" fill="#7B61FF" fill-opacity="0.45" />
+  <rect x="118" y="160" width="186" height="16" rx="8" fill="#4CE0D2" fill-opacity="0.48" />
+  <rect x="118" y="192" width="204" height="16" rx="8" fill="#7B61FF" fill-opacity="0.36" />
+  <rect x="118" y="224" width="168" height="16" rx="8" fill="#4CE0D2" fill-opacity="0.32" />
+  <rect x="118" y="256" width="226" height="16" rx="8" fill="#7B61FF" fill-opacity="0.3" />
+  <path d="M312 132C328.569 132 342 145.431 342 162V242C342 258.569 328.569 272 312 272C295.431 272 282 258.569 282 242V162C282 145.431 295.431 132 312 132Z" fill="#101E35" stroke="#63FFD9" stroke-opacity="0.4" stroke-width="2" />
+  <path d="M312 154C320.837 154 328 161.163 328 170C328 178.837 320.837 186 312 186C303.163 186 296 178.837 296 170C296 161.163 303.163 154 312 154Z" fill="#63FFD9" fill-opacity="0.3" />
+  <rect x="298" y="202" width="28" height="48" rx="12" fill="#7B61FF" fill-opacity="0.32" />
+  <rect x="316" y="202" width="28" height="48" rx="12" fill="#4CE0D2" fill-opacity="0.28" />
+  <rect x="24" y="16" width="432" height="368" rx="32" stroke="url(#caseThreeAccent)" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="14 18" />
+</svg>

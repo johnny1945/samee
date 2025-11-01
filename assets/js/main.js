@@ -1,65 +1,131 @@
 const numberFormatter = new Intl.NumberFormat('en-IN');
 
 const serviceDetails = {
-    'body-repair': {
-        title: 'Body Repair Excellence',
-        image: './assets/images/services-1.jpeg',
-        description: 'Dealer-grade collision restoration for aluminium and high-strength steel frames.',
+    narrative: {
+        title: 'Launch Narrative Systems',
+        image: './assets/images/aithentic-capability-1.svg',
+        description: 'Translate your roadmap into a coherent story that guides buyers, investors, and internal teams.',
         points: [
-            'Computerised chassis straightening and panel calibrations for BMW, Mercedes, Audi, and more.',
-            'OEM-approved paint booths with dust-free curing for flawless colour matching.',
-            'Dedicated insurance desk for hassle-free approvals and claim paperwork.'
+            'Audience-specific messaging operating systems spanning landing pages, decks, and enablement.',
+            'Hero sequencing, tonal palettes, and motion briefs engineered for every launch phase.',
+            'Interactive story maps aligning product, marketing, and revenue milestones.'
         ]
     },
-    'maintenance': {
-        title: 'Scheduled Maintenance',
-        image: './assets/images/services-3.jpeg',
-        description: 'Preventive care programs tuned around European service schedules.',
+    prototyping: {
+        title: 'Interactive Prototype Theatre',
+        image: './assets/images/aithentic-capability-2.svg',
+        description: 'High-fidelity demos that mirror live data and product states across devices and touchpoints.',
         points: [
-            'Digital health reports covering 120+ checkpoints on every visit.',
-            'Genuine fluids, filters, and torque specs as per factory recommendations.',
-            'Predictive reminders sent via WhatsApp so you never miss a service.'
+            'Responsive prototypes instrumented with scenario switching, dynamic data, and guided tour modes.',
+            'Sales and investor-ready walkthroughs crafted for async sharing or live conversations.',
+            'Component libraries and design tokens that accelerate engineering hand-off and build sprints.'
         ]
     },
-    'overhaul': {
-        title: 'Major Assembly Overhauls',
-        image: './assets/images/services-4.jpg',
-        description: 'Rebuilds and retrofits that extend the life of your powertrain components.',
+    analytics: {
+        title: 'Analytics Story Canvas',
+        image: './assets/images/aithentic-capability-3.svg',
+        description: 'Surface the numbers behind every interaction with narrative-friendly dashboards.',
         points: [
-            'Engine remanufacturing with OEM tolerances and warranty-backed parts.',
-            'Transmission rebuilds, programming, and mechatronic flush procedures.',
-            'Adaptive suspension diagnostics with laser alignment and calibration.'
+            'Event architecture connecting showcases to CRM, marketing automation, and product analytics.',
+            'Story-driven dashboards that adapt in real-time to stakeholder context and questions.',
+            'Experiment playbooks that guide optimisation after launch using qualitative and quantitative inputs.'
         ]
     },
-    'paint': {
-        title: 'Paint Studio & Detailing',
-        image: './assets/images/services-5.jpg',
-        description: 'Showroom-grade finishes with premium protection packages.',
+    customizers: {
+        title: 'Dynamic Product Customizers',
+        image: './assets/images/aithentic-capability-4.svg',
+        description: 'Empower audiences to explore possibilities through guided configuration and scenario tools.',
         points: [
-            'Infrared curing booths ensure consistent gloss and depth on every panel.',
-            'Ceramic and graphene coatings with maintenance support up to five years.',
-            'Spectrophotometer-based colour matching for factory-perfect results.'
+            'Visual configurators with pricing, add-on logic, localisation, and ROI narratives.',
+            'Outcome simulators that reflect feature availability, integrations, and delivery timelines.',
+            'Performance-optimised experiences that embed seamlessly inside landing pages or sales platforms.'
         ]
     },
-    'detailing': {
-        title: 'Detailing Lounge',
-        image: './assets/images/services-6.jpeg',
-        description: 'Interior and exterior rejuvenation created for luxury cabins.',
+    automation: {
+        title: 'Launch Automation Pipelines',
+        image: './assets/images/aithentic-capability-5.svg',
+        description: 'Orchestrate launch communications and operations from a single connected pipeline.',
         points: [
-            'Ozone sanitisation, leather hydration, and allergen neutralisation.',
-            'Steam cleaning with swirl-free polishing for long-lasting shine.',
-            'Alloy, brake caliper, and glass restoration to complement the finish.'
+            'CRM, marketing automation, and sales triggers aligned to showcase milestones and visitor signals.',
+            'Slack, email, and dashboard alerts that keep GTM, product, and leadership teams synchronised.',
+            'Version-controlled asset hubs with analytics tracking for every release moment.'
         ]
     },
-    'enhancements': {
-        title: 'Custom Enhancements',
-        image: './assets/images/services-8.jpeg',
-        description: 'Tailor-made upgrades that elevate performance and personality.',
+    support: {
+        title: 'Always-on Support Systems',
+        image: './assets/images/aithentic-capability-6.svg',
+        description: 'Keep teams launch-ready with knowledge centers, playbooks, and training loops.',
         points: [
-            'Stage 1 & 2 ECU remaps supplied with dyno health reports.',
-            'Premium wraps, PPF installs, and bespoke graphic packages.',
-            'Lifestyle upgrades including ambient lighting, infotainment, and dash cams.'
+            'Enablement portals with scripts, FAQs, and persona-based talking points.',
+            'Live and asynchronous training experiences complete with certification-ready materials.',
+            'Post-launch optimisation sprints anchored to data, customer feedback, and success metrics.'
         ]
+    }
+};
+
+const articleDetails = {
+    'immersive-demos': {
+        title: 'Designing immersive demo operating systems',
+        paragraphs: [
+            'Launch experiences perform best when story beats, motion, and data instrumentation act in unison. We start with the questions your audience will ask and build interactive scenes that answer them before they?re spoken.',
+            'Aithentic choreographs cross-functional demo operating systems so product, marketing, and revenue teams stay aligned even as the roadmap evolves.'
+        ],
+        list: {
+            title: 'Inside this playbook',
+            items: [
+                'Story architecture frameworks adaptable to any GTM milestone.',
+                'Motion and interaction patterns that keep visitors exploring, not scanning.',
+                'Governance tips that help teams update content without losing momentum.'
+            ]
+        }
+    },
+    'launch-analytics': {
+        title: 'Measuring launch resonance with live analytics',
+        paragraphs: [
+            'Instrumenting a showcase is more than adding pageview tags. We blend qualitative signals with quantified behaviours so your team knows what to reinforce after launch.',
+            'Dashboards are designed for conversations?whether you?re in an investor review or daily stand-up.'
+        ],
+        list: {
+            title: 'What we cover',
+            items: [
+                'Event models that connect showcases to CRM and product analytics tools.',
+                'Cohort views that surface how personas explore and where they convert.',
+                'Experiment loops that translate insight into the next release sprint.'
+            ]
+        }
+    },
+    'team-enablement': {
+        title: 'Enablement stacks that keep teams launch-ready',
+        paragraphs: [
+            'Launches succeed when every customer-facing teammate shares the same voice. Our enablement stacks package scripts, FAQs, and artefacts that stay fresh over time.',
+            'From onboarding to certifications, we help you build rituals that retain knowledge even as teams scale.'
+        ],
+        list: {
+            title: 'Enablement ingredients',
+            items: [
+                'Persona-based talk tracks, objection handlers, and visual references.',
+                'Self-serve training modules with checklists, quizzes, and refresher prompts.',
+                'Feedback loops that collect field intel and route it back to product quickly.'
+            ]
+        }
+    }
+};
+
+const footerServiceDetails = {
+    'other-services': {
+        title: 'Additional ways we help',
+        paragraphs: [
+            'Beyond launch showcases, our studio supports the entire product storytelling lifecycle with fast-turnaround squads.'
+        ],
+        list: {
+            items: [
+                'Brand identity refresh sprints that align visuals with your new narrative.',
+                'Persona, buyer-journey, and UX research labs to shape future releases.',
+                'Content operations playbooks covering documentation, release notes, and onboarding.',
+                'Founder and executive narrative coaching ahead of key demos or investor updates.'
+            ]
+        },
+        note: 'Have a requirement that does not fit neatly into a capability? Start a discovery chat and we will assemble the right crew.'
     }
 };
 
@@ -69,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupServiceModal();
     setupCounters();
     setupContactForm();
+    setupInsightModals();
+    setupFooterSubscribe();
 });
 
 function initialiseSmoothScroll() {
@@ -129,16 +197,28 @@ function initThirdPartyLibraries() {
             gsap.registerPlugin(ScrollTrigger);
         }
 
-        gsap.set('[data-hero-title], [data-hero-subtitle], [data-hero-cta] a', {
+        gsap.set('[data-hero-title], [data-hero-subtitle], [data-hero-copy], [data-hero-cta] a', {
             opacity: 0,
             y: 60
+        });
+        gsap.set('.hero-metric', {
+            opacity: 0,
+            y: 25
+        });
+        gsap.set('[data-hero-visual]', {
+            opacity: 0,
+            y: 40,
+            scale: 0.96
         });
 
         const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out', duration: 1 } });
         heroTimeline
             .to('[data-hero-title]', { opacity: 1, y: 0 })
             .to('[data-hero-subtitle]', { opacity: 1, y: 0 }, '-=0.65')
-            .to('[data-hero-cta] a', { opacity: 1, y: 0, stagger: 0.12 }, '-=0.55');
+            .to('[data-hero-copy]', { opacity: 1, y: 0 }, '-=0.55')
+            .to('[data-hero-cta] a', { opacity: 1, y: 0, stagger: 0.12 }, '-=0.45')
+            .to('[data-hero-visual]', { opacity: 1, y: 0, scale: 1 }, '-=0.55')
+            .to('.hero-metric', { opacity: 1, y: 0, stagger: 0.1 }, '-=0.5');
 
         gsap.utils.toArray('.service-card, .contact-card').forEach((card) => {
             gsap.from(card, {
@@ -293,11 +373,11 @@ function setupContactForm() {
         return;
     }
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
         const formData = new FormData(form);
-        const data = {
+        const payload = {
             firstName: (formData.get('firstName') || '').trim(),
             lastName: (formData.get('lastName') || '').trim(),
             email: (formData.get('email') || '').trim(),
@@ -306,8 +386,8 @@ function setupContactForm() {
             message: (formData.get('message') || '').trim()
         };
 
-        if (Object.values(data).some((value) => !value)) {
-            showAlert({
+        if (Object.values(payload).some((value) => !value)) {
+            await showAlert({
                 icon: 'warning',
                 title: 'Missing information',
                 text: 'Please fill in all the fields before submitting.'
@@ -316,8 +396,8 @@ function setupContactForm() {
         }
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(data.email)) {
-            showAlert({
+        if (!emailPattern.test(payload.email)) {
+            await showAlert({
                 icon: 'error',
                 title: 'Invalid email',
                 text: 'Please enter a valid email address so we can get back to you.'
@@ -326,8 +406,8 @@ function setupContactForm() {
         }
 
         const phonePattern = /^[0-9+\-()\s]{7,}$/;
-        if (!phonePattern.test(data.phone)) {
-            showAlert({
+        if (!phonePattern.test(payload.phone)) {
+            await showAlert({
                 icon: 'error',
                 title: 'Invalid phone number',
                 text: 'Please provide a reachable phone number with at least seven digits.'
@@ -335,56 +415,204 @@ function setupContactForm() {
             return;
         }
 
-        const submissionText = buildSubmissionText(data);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalLabel = submitButton?.textContent || 'Send message';
 
-        showAlert({
-            icon: 'success',
-            title: 'Submitted!',
-            text: 'Your message has been submitted successfully. A copy will download for your records.',
-            confirmButtonText: 'Download copy'
-        }).then(() => {
-            downloadTextFile(`tiwana-contact-${Date.now()}.txt`, submissionText);
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending?';
+        }
+
+        try {
+            await submitContactRequest({
+                ...payload,
+                submittedAt: new Date().toISOString()
+            });
+
+            await showAlert({
+                icon: 'success',
+                title: 'We received your message',
+                text: 'Our team will be in touch within one business day.'
+            });
+
             form.reset();
+        } catch (error) {
+            await showAlert({
+                icon: 'error',
+                title: 'Unable to submit right now',
+                text: error?.message || 'Please try again or reach us at hello@aithentic.co.'
+            });
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalLabel;
+            }
+        }
+    });
+}
+
+async function submitContactRequest(payload) {
+    if (typeof fetch !== 'function') {
+        throw new Error('Please email us at hello@aithentic.co and we will respond quickly.');
+    }
+
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            let errorMessage = 'We could not send your message. Please try again in a moment.';
+            try {
+                const errorBody = await response.json();
+                if (errorBody?.message) {
+                    errorMessage = errorBody.message;
+                }
+            } catch (error) {
+                // Non-JSON response, keep default message
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        return response.json().catch(() => ({}));
+    } catch (error) {
+        throw new Error(error?.message || 'We could not submit your message. Please try again.');
+    }
+}
+
+function renderInfoModalContent(container, content) {
+    container.innerHTML = '';
+
+    (content?.paragraphs || []).forEach((text) => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = text;
+        container.appendChild(paragraph);
+    });
+
+    if (content?.list?.items?.length) {
+        if (content.list.title) {
+            const heading = document.createElement('h6');
+            heading.className = 'text-white-50 text-uppercase small fw-semibold mb-2';
+            heading.textContent = content.list.title;
+            container.appendChild(heading);
+        }
+
+        const list = document.createElement('ul');
+        list.className = 'info-modal__list';
+        content.list.items.forEach((item) => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            list.appendChild(li);
+        });
+        container.appendChild(list);
+    }
+
+    if (content?.note) {
+        const note = document.createElement('p');
+        note.className = 'text-white-50 small mb-0';
+        note.textContent = content.note;
+        container.appendChild(note);
+    }
+}
+
+function setupInsightModals() {
+    const modalElement = document.getElementById('infoModal');
+    if (!modalElement) {
+        return;
+    }
+
+    const titleEl = modalElement.querySelector('[data-info-title]');
+    const bodyEl = modalElement.querySelector('[data-info-body]');
+    if (!titleEl || !bodyEl) {
+        return;
+    }
+
+    const modalInstance = typeof bootstrap !== 'undefined' && bootstrap?.Modal
+        ? new bootstrap.Modal(modalElement, {
+            backdrop: true
+        })
+        : null;
+
+    const openModal = (content, fallbackTitle) => {
+        if (!content) {
+            console.warn('No modal content available for', fallbackTitle);
+            return;
+        }
+
+        titleEl.textContent = content.title || fallbackTitle || 'Details';
+        renderInfoModalContent(bodyEl, content);
+
+        if (modalInstance) {
+            modalInstance.show();
+        } else {
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+        }
+    };
+
+    document.querySelectorAll('[data-article-trigger]').forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+            const card = trigger.closest('[data-article-key]');
+            if (!card) {
+                return;
+            }
+
+            const key = card.dataset.articleKey;
+            const fallbackTitle = card.querySelector('h5')?.textContent || trigger.textContent;
+            openModal(articleDetails[key], fallbackTitle);
+        });
+    });
+
+    document.querySelectorAll('[data-footer-service]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const key = link.dataset.footerService;
+            openModal(footerServiceDetails[key], link.textContent);
         });
     });
 }
 
-function buildSubmissionText(data) {
-    const timestamp = new Date().toLocaleString('en-IN', {
-        timeZone: 'Asia/Kolkata'
+function setupFooterSubscribe() {
+    const form = document.getElementById('footerSubscribe');
+    if (!form) {
+        return;
+    }
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const emailInput = form.querySelector('input[type="email"]');
+        const email = (emailInput?.value || '').trim();
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+            await showAlert({
+                icon: 'warning',
+                title: 'Invalid email',
+                text: 'Please enter a valid email address to join the digest.'
+            });
+            return;
+        }
+
+        await showAlert({
+            icon: 'success',
+            title: 'You are on the list',
+            text: 'Expect monthly notes packed with launch rituals and product storytelling tips.'
+        });
+
+        form.reset();
     });
-
-    return [
-        '--- Tiwana Automobiles contact submission ---',
-        `Timestamp: ${timestamp}`,
-        `Name: ${data.firstName} ${data.lastName}`,
-        `Email: ${data.email}`,
-        `Phone: ${data.phone}`,
-        `Subject: ${data.subject}`,
-        'Message:',
-        data.message,
-        '',
-        '---------------------------------------------'
-    ].join('\n');
-}
-
-function downloadTextFile(filename, content) {
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = filename;
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
 }
 
 function showAlert(options) {
     if (typeof Swal !== 'undefined') {
         return Swal.fire({
-            confirmButtonColor: '#44d125',
+            confirmButtonColor: '#7b61ff',
             ...options
         });
     }

@@ -1,0 +1,23 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="capFourBg" x1="60" y1="40" x2="420" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09101F" />
+      <stop offset="1" stop-color="#161B32" />
+    </linearGradient>
+    <radialGradient id="capFourGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 160) rotate(90) scale(200 260)">
+      <stop offset="0.12" stop-color="#4CE0D2" stop-opacity="0.38" />
+      <stop offset="1" stop-color="#050B18" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect x="24" y="20" width="472" height="320" rx="28" fill="url(#capFourBg)" />
+  <rect x="24" y="20" width="472" height="320" rx="28" fill="url(#capFourGlow)" />
+  <rect x="100" y="82" width="320" height="196" rx="26" fill="#101A33" stroke="#24355A" stroke-opacity="0.55" />
+  <rect x="132" y="116" width="152" height="12" rx="6" fill="#4CE0D2" />
+  <rect x="132" y="144" width="208" height="12" rx="6" fill="#7B61FF" fill-opacity="0.34" />
+  <rect x="132" y="172" width="180" height="12" rx="6" fill="#4CE0D2" fill-opacity="0.3" />
+  <rect x="132" y="200" width="212" height="12" rx="6" fill="#7B61FF" fill-opacity="0.28" />
+  <rect x="132" y="228" width="170" height="12" rx="6" fill="#4CE0D2" fill-opacity="0.26" />
+  <circle cx="328" cy="184" r="52" stroke="#4CE0D2" stroke-opacity="0.4" stroke-width="2" />
+  <circle cx="328" cy="184" r="28" fill="#111F3B" stroke="#7B61FF" stroke-opacity="0.45" stroke-width="2" />
+  <path d="M328 168L342 192H314L328 168Z" fill="#7B61FF" fill-opacity="0.28" />
+</svg>
