@@ -78,14 +78,21 @@ img {
     background-color: var(--c-surface);
 }
 
+
 .hero-slide {
     position: relative;
     min-height: clamp(480px, 90vh, 720px);
     background-position: center;
     background-size: cover;
+    color: var(--c-white);
+}
+
+.hero-slide .container {
+    min-height: inherit;
     display: flex;
     align-items: center;
-    color: var(--c-white);
+    position: relative;
+    z-index: 1;
 }
 
 .hero-slide__overlay {
