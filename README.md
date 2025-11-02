@@ -5,7 +5,7 @@ A refreshed single-page experience for the Aithentic product studio. The site hi
 ## Stack
 
 - HTML5 + Bootstrap 5
-- Custom CSS and GSAP animations
+- Custom CSS and GSAP animations (brand palette #050505 / #44d125)
 - Vanilla JavaScript for interactions
 - Express.js API for persisting contact submissions
 - SweetAlert2 for inline notifications
@@ -42,7 +42,7 @@ The project is intentionally framework-free on the front end. Any static hosting
 ## Customisation
 
 - Update hero copy and metrics directly in `index.html`.
-- Adjust brand colours or typography in `assets/css/style.css`.
+- Adjust brand colours or typography in `assets/css/style.css` (see the variables under `:root`).
 - Edit capabilities, insight modal content, or animations inside `assets/js/main.js`.
 
 ## License

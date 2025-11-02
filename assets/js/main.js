@@ -1,64 +1,64 @@
 const numberFormatter = new Intl.NumberFormat('en-IN');
 
 const serviceDetails = {
-    narrative: {
-        title: 'Launch Narrative Systems',
-        image: './assets/images/aithentic-capability-1.svg',
-        description: 'Translate your roadmap into a coherent story that guides buyers, investors, and internal teams.',
+    'ui-design': {
+        title: 'Interface & UI Design',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
+        description: 'Component-driven interfaces and design tokens that drop straight into your engineering workflow.',
         points: [
-            'Audience-specific messaging operating systems spanning landing pages, decks, and enablement.',
-            'Hero sequencing, tonal palettes, and motion briefs engineered for every launch phase.',
-            'Interactive story maps aligning product, marketing, and revenue milestones.'
+            'UI foundations, typography, and colour systems tuned for dark and light modes.',
+            'Reusable components with documentation your product and marketing teams can share.',
+            'Design QA support to ensure the shipped build mirrors the crafted intent.'
+        ]
+    },
+    'web-build': {
+        title: 'Marketing & Product Websites',
+        image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=80',
+        description: 'Conversion-first websites with modular CMS blocks, rapid load times, and accessibility baked in.',
+        points: [
+            'Launch orchestration across Webflow, Next.js, or custom stacks with detailed handover.',
+            'SEO-ready pages, schema, and analytics hooks that activate on day zero.',
+            'Ongoing optimisation playbooks covering experiments, localisation, and content ops.'
+        ]
+    },
+    'product-strategy': {
+        title: 'Product Strategy Sprints',
+        image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80',
+        description: 'Runway-planning sprints that connect audience insight, roadmap priorities, and launch messaging.',
+        points: [
+            'Collaborative workshops that surface positioning, differentiation, and market fit.',
+            'Journey maps and service blueprints linking product milestones to go-to-market levers.',
+            'North-star metrics and guardrails that keep future releases aligned to measurable impact.'
         ]
     },
     prototyping: {
         title: 'Interactive Prototype Theatre',
-        image: './assets/images/aithentic-capability-2.svg',
-        description: 'High-fidelity demos that mirror live data and product states across devices and touchpoints.',
+        image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80',
+        description: 'Scenario-driven prototypes that combine motion, narration, and data to accelerate buy-in.',
         points: [
-            'Responsive prototypes instrumented with scenario switching, dynamic data, and guided tour modes.',
-            'Sales and investor-ready walkthroughs crafted for async sharing or live conversations.',
-            'Component libraries and design tokens that accelerate engineering hand-off and build sprints.'
+            'Clickable demos with branching flows tailored for sales, fundraising, and onboarding.',
+            'Integrated video, audio, and telemetry so viewers feel like they are using the live product.',
+            'Guided story scripts and presenter notes to keep every walkthrough consistent.'
         ]
     },
-    analytics: {
-        title: 'Analytics Story Canvas',
-        image: './assets/images/aithentic-capability-3.svg',
-        description: 'Surface the numbers behind every interaction with narrative-friendly dashboards.',
+    'brand-identity': {
+        title: 'Brand & Launch Identity',
+        image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80',
+        description: 'Narrative, motion, and visual systems that cement how your product shows up in every channel.',
         points: [
-            'Event architecture connecting showcases to CRM, marketing automation, and product analytics.',
-            'Story-driven dashboards that adapt in real-time to stakeholder context and questions.',
-            'Experiment playbooks that guide optimisation after launch using qualitative and quantitative inputs.'
+            'Logo refreshes, typography, and colour palettes optimised for digital environments.',
+            'Motion guidelines covering micro-interactions, hero sequences, and reveal moments.',
+            'Asset kits for decks, socials, and video with usage rules to scale your story.'
         ]
     },
-    customizers: {
-        title: 'Dynamic Product Customizers',
-        image: './assets/images/aithentic-capability-4.svg',
-        description: 'Empower audiences to explore possibilities through guided configuration and scenario tools.',
+    'growth-analytics': {
+        title: 'Growth Analytics & Enablement',
+        image: 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80',
+        description: 'A measurement and enablement layer that keeps product, marketing, and revenue teams aligned.',
         points: [
-            'Visual configurators with pricing, add-on logic, localisation, and ROI narratives.',
-            'Outcome simulators that reflect feature availability, integrations, and delivery timelines.',
-            'Performance-optimised experiences that embed seamlessly inside landing pages or sales platforms.'
-        ]
-    },
-    automation: {
-        title: 'Launch Automation Pipelines',
-        image: './assets/images/aithentic-capability-5.svg',
-        description: 'Orchestrate launch communications and operations from a single connected pipeline.',
-        points: [
-            'CRM, marketing automation, and sales triggers aligned to showcase milestones and visitor signals.',
-            'Slack, email, and dashboard alerts that keep GTM, product, and leadership teams synchronised.',
-            'Version-controlled asset hubs with analytics tracking for every release moment.'
-        ]
-    },
-    support: {
-        title: 'Always-on Support Systems',
-        image: './assets/images/aithentic-capability-6.svg',
-        description: 'Keep teams launch-ready with knowledge centers, playbooks, and training loops.',
-        points: [
-            'Enablement portals with scripts, FAQs, and persona-based talking points.',
-            'Live and asynchronous training experiences complete with certification-ready materials.',
-            'Post-launch optimisation sprints anchored to data, customer feedback, and success metrics.'
+            'Dashboards that translate behaviour data into actions for GTM and product squads.',
+            'Automation blueprints syncing CRM, support, and analytics platforms around launch events.',
+            'Playbooks, scripts, and training portals so every champion can pitch with confidence.'
         ]
     }
 };
@@ -67,8 +67,8 @@ const articleDetails = {
     'immersive-demos': {
         title: 'Designing immersive demo operating systems',
         paragraphs: [
-            'Launch experiences perform best when story beats, motion, and data instrumentation act in unison. We start with the questions your audience will ask and build interactive scenes that answer them before they?re spoken.',
-            'Aithentic choreographs cross-functional demo operating systems so product, marketing, and revenue teams stay aligned even as the roadmap evolves.'
+            'For the new Aithentic website we prototyped each hero slide in Figma, then layered GSAP micro-movements to keep the story lively without adding weight.',
+            'Our demo operating systems package motion specs, presenter notes, and asset libraries so product, marketing, and revenue squads can retell the same story flawlessly.'
         ],
         list: {
             title: 'Inside this playbook',
@@ -82,8 +82,8 @@ const articleDetails = {
     'launch-analytics': {
         title: 'Measuring launch resonance with live analytics',
         paragraphs: [
-            'Instrumenting a showcase is more than adding pageview tags. We blend qualitative signals with quantified behaviours so your team knows what to reinforce after launch.',
-            'Dashboards are designed for conversations?whether you?re in an investor review or daily stand-up.'
+            'Every screen in this build is wired to track scroll depth, CTA intent, and carousel engagement so we know exactly what to iterate next.',
+            'We convert analytics into conversation-ready dashboards that sales, product, and leadership can skim in minutes.'
         ],
         list: {
             title: 'What we cover',
@@ -97,8 +97,8 @@ const articleDetails = {
     'team-enablement': {
         title: 'Enablement stacks that keep teams launch-ready',
         paragraphs: [
-            'Launches succeed when every customer-facing teammate shares the same voice. Our enablement stacks package scripts, FAQs, and artefacts that stay fresh over time.',
-            'From onboarding to certifications, we help you build rituals that retain knowledge even as teams scale.'
+            'Behind the scenes we documented every component, colour token, and copy block so future updates stay on-message.',
+            'Enablement hubs keep onboarding smooth, from project kick-off checklists to video explainers and certification paths.'
         ],
         list: {
             title: 'Enablement ingredients',
@@ -115,12 +115,12 @@ const footerServiceDetails = {
     'other-services': {
         title: 'Additional ways we help',
         paragraphs: [
-            'Beyond launch showcases, our studio supports the entire product storytelling lifecycle with fast-turnaround squads.'
+            'Beyond launch showcases, our studio supports ongoing UX, content, and enablement needs with fast-turnaround pods.'
         ],
         list: {
             items: [
-                'Brand identity refresh sprints that align visuals with your new narrative.',
-                'Persona, buyer-journey, and UX research labs to shape future releases.',
+                'Design system maintenance, accessibility audits, and component QA.',
+                'Webflow and headless CMS migrations with performance optimisation.',
                 'Content operations playbooks covering documentation, release notes, and onboarding.',
                 'Founder and executive narrative coaching ahead of key demos or investor updates.'
             ]
@@ -197,28 +197,7 @@ function initThirdPartyLibraries() {
             gsap.registerPlugin(ScrollTrigger);
         }
 
-        gsap.set('[data-hero-title], [data-hero-subtitle], [data-hero-copy], [data-hero-cta] a', {
-            opacity: 0,
-            y: 60
-        });
-        gsap.set('.hero-metric', {
-            opacity: 0,
-            y: 25
-        });
-        gsap.set('[data-hero-visual]', {
-            opacity: 0,
-            y: 40,
-            scale: 0.96
-        });
-
-        const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out', duration: 1 } });
-        heroTimeline
-            .to('[data-hero-title]', { opacity: 1, y: 0 })
-            .to('[data-hero-subtitle]', { opacity: 1, y: 0 }, '-=0.65')
-            .to('[data-hero-copy]', { opacity: 1, y: 0 }, '-=0.55')
-            .to('[data-hero-cta] a', { opacity: 1, y: 0, stagger: 0.12 }, '-=0.45')
-            .to('[data-hero-visual]', { opacity: 1, y: 0, scale: 1 }, '-=0.55')
-            .to('.hero-metric', { opacity: 1, y: 0, stagger: 0.1 }, '-=0.5');
+        initHeroAnimations();
 
         gsap.utils.toArray('.service-card, .contact-card').forEach((card) => {
             gsap.from(card, {
@@ -233,6 +212,66 @@ function initThirdPartyLibraries() {
             });
         });
     }
+}
+
+function initHeroAnimations() {
+    if (typeof gsap === 'undefined') {
+        return;
+    }
+
+    const carousel = document.getElementById('heroCarousel');
+    if (!carousel) {
+        return;
+    }
+
+    const setSlideState = (slide, values) => {
+        if (!slide) {
+            return;
+        }
+
+        slide.querySelectorAll('[data-hero-title], [data-hero-subtitle], [data-hero-copy], [data-hero-cta] .btn').forEach((el) => {
+            gsap.set(el, values);
+        });
+    };
+
+    const animateSlide = (slide) => {
+        if (!slide) {
+            return;
+        }
+
+        const subtitle = slide.querySelector('[data-hero-subtitle]');
+        const title = slide.querySelector('[data-hero-title]');
+        const copy = slide.querySelector('[data-hero-copy]');
+        const buttons = slide.querySelectorAll('[data-hero-cta] .btn');
+
+        const timeline = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.9 } });
+        if (subtitle) {
+            timeline.to(subtitle, { opacity: 1, y: 0 });
+        }
+        if (title) {
+            timeline.to(title, { opacity: 1, y: 0 }, subtitle ? '-=0.6' : '<');
+        }
+        if (copy) {
+            timeline.to(copy, { opacity: 1, y: 0 }, '-=0.55');
+        }
+        if (buttons.length) {
+            timeline.to(buttons, { opacity: 1, y: 0, stagger: 0.12 }, '-=0.5');
+        }
+    };
+
+    const slides = carousel.querySelectorAll('.carousel-item');
+    slides.forEach((slide) => setSlideState(slide, { opacity: 0, y: 40 }));
+
+    const activeSlide = carousel.querySelector('.carousel-item.active');
+    animateSlide(activeSlide);
+
+    carousel.addEventListener('slide.bs.carousel', (event) => {
+        setSlideState(event.relatedTarget, { opacity: 0, y: 40 });
+    });
+
+    carousel.addEventListener('slid.bs.carousel', (event) => {
+        animateSlide(event.relatedTarget);
+    });
 }
 
 function setupServiceModal() {
@@ -612,7 +651,7 @@ function setupFooterSubscribe() {
 function showAlert(options) {
     if (typeof Swal !== 'undefined') {
         return Swal.fire({
-            confirmButtonColor: '#7b61ff',
+            confirmButtonColor: '#44d125',
             ...options
         });
     }

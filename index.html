@@ -54,42 +54,74 @@
         </div>
     </nav>
 
-    <section id="home"
-        class="hero-section min-vh-100 d-flex align-items-center text-center position-relative overflow-hidden">
-        <div class="hero-shape hero-shape--one"></div>
-        <div class="hero-shape hero-shape--two"></div>
-        <div class="hero-gradient"></div>
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-9">
-                    <span class="hero-eyebrow" data-hero-subtitle>Digital product showcase studio</span>
-                    <h1 class="display-3 fw-semibold" data-hero-title>Welcome to Aithentic</h1>
-                    <p class="lead text-white-50" data-hero-copy>We craft immersive demos, launch journeys, and product
-                        storytelling for teams ready to ship unforgettable web experiences.</p>
-                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4" data-hero-cta>
-                        <a href="#contact" class="btn btn-brand">Book a demo</a>
-                        <a href="#services" class="btn btn-outline-light">Explore capabilities</a>
+    <section id="home" class="hero-carousel">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6500">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active hero-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80');">
+                    <div class="hero-slide__overlay"></div>
+                    <div class="container">
+                        <div class="hero-content" data-hero-slide>
+                            <span class="hero-eyebrow" data-hero-subtitle>Aithentic digital studio</span>
+                            <h1 class="display-4 fw-semibold" data-hero-title>Launch-ready UI systems</h1>
+                            <p class="lead text-white-50 mb-4" data-hero-copy>We translate product goals into immersive
+                                interfaces that excite decision makers and guide teams.</p>
+                            <div class="hero-cta d-flex flex-column flex-sm-row gap-3" data-hero-cta>
+                                <a href="#contact" class="btn btn-brand">Start a project</a>
+                                <a href="#services" class="btn btn-outline-light">View capabilities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item hero-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1600&q=80');">
+                    <div class="hero-slide__overlay"></div>
+                    <div class="container">
+                        <div class="hero-content" data-hero-slide>
+                            <span class="hero-eyebrow" data-hero-subtitle>Product showcase studio</span>
+                            <h1 class="display-4 fw-semibold" data-hero-title>Stories engineered for conversion</h1>
+                            <p class="lead text-white-50 mb-4" data-hero-copy>Crafted walkthroughs, motion systems, and
+                                enablement stacks keep every launch moment consistent.</p>
+                            <div class="hero-cta d-flex flex-column flex-sm-row gap-3" data-hero-cta>
+                                <a href="#works" class="btn btn-brand">Explore showcase</a>
+                                <a href="#blog" class="btn btn-outline-light">See how we build</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item hero-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80');">
+                    <div class="hero-slide__overlay"></div>
+                    <div class="container">
+                        <div class="hero-content" data-hero-slide>
+                            <span class="hero-eyebrow" data-hero-subtitle>Experience architecture</span>
+                            <h1 class="display-4 fw-semibold" data-hero-title>From Figma to production in weeks</h1>
+                            <p class="lead text-white-50 mb-4" data-hero-copy>Our hybrid team of strategists, designers,
+                                and engineers delivers assets your product and growth teams can run with.</p>
+                            <div class="hero-cta d-flex flex-column flex-sm-row gap-3" data-hero-cta>
+                                <a href="#contact" class="btn btn-brand">Book a discovery call</a>
+                                <a href="#services" class="btn btn-outline-light">Capabilities deck</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual mt-5" data-hero-visual>
-                <img src="./assets/images/aithentic-hero-visual.svg" class="img-fluid"
-                    alt="Aithentic product showcase dashboards" loading="lazy" />
-            </div>
-            <div class="hero-metrics mt-5">
-                <div class="hero-metric">
-                    <span>120+</span>
-                    <small>product journeys launched</small>
-                </div>
-                <div class="hero-metric">
-                    <span>38%</span>
-                    <small>average lift in conversions</small>
-                </div>
-                <div class="hero-metric">
-                    <span>24 hr</span>
-                    <small>turnaround to first prototype</small>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -107,11 +139,17 @@
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6" data-aos="fade-down" data-aos-delay="200">
-                    <img src="./assets/images/aithentic-about-visual.svg"
-                        alt="Aithentic design operations dashboard" />
+                    <div class="about-visual">
+                        <img class="about-visual__image"
+                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                            alt="Aithentic team shaping digital product journeys" loading="lazy">
+                        <div class="about-visual__logo">
+                            <img src="./assets/images/aithentic-mark.svg" alt="Aithentic mark" loading="lazy">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-down" data-aos-delay="250">
-                    <h1>Show, don?t just tell</h1>
+                    <h1>Show, don't just tell</h1>
                     <p class="mt-3 mt-4 text-white">Every decision we make is orchestrated around what your audience
                         should feel, learn, and do. From cinematic hero moments to data-rich detail views, we blend
                         storytelling and systems thinking into a single launch layer.</p>
@@ -161,99 +199,100 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-                    <button type="button" class="service-card theme-shadow" data-service-key="narrative"
-                        aria-label="View details for launch narrative systems">
+                    <button type="button" class="service-card theme-shadow" data-service-key="ui-design"
+                        aria-label="View details for UI design systems">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-1.svg" alt="Narrative system design"
-                                loading="lazy">
-                            <span class="service-card__badge">Narrative OS</span>
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                                alt="UI design workflows" loading="lazy">
+                            <span class="service-card__badge">Design Ops</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Launch Narrative Systems</h5>
-                            <p>Message architecture, hero sequencing, and tonal palettes tailored for your audiences and
-                                release cadences.</p>
+                            <h5>Interface &amp; UI Design</h5>
+                            <p>Signature component libraries, design tokens, and responsive layouts ready for your build
+                                pipeline.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <button type="button" class="service-card theme-shadow" data-service-key="prototyping"
-                        aria-label="View details for interactive prototype theatre">
+                    <button type="button" class="service-card theme-shadow" data-service-key="web-build"
+                        aria-label="View details for website making">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-2.svg" alt="Realtime product prototypes"
-                                loading="lazy">
-                            <span class="service-card__badge">Live Figma</span>
+                            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=900&q=80"
+                                alt="Website build" loading="lazy">
+                            <span class="service-card__badge">Webcraft</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Interactive Prototype Theatre</h5>
-                            <p>Responsive, data-aware prototypes that simulate the exact product states your team needs to
-                                sell.</p>
+                            <h5>Marketing &amp; Product Websites</h5>
+                            <p>High-performance sites with modular CMS blocks, accessibility baked in, and launch-day SEO.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
-                    <button type="button" class="service-card theme-shadow" data-service-key="analytics"
-                        aria-label="View details for analytics canvas">
+                    <button type="button" class="service-card theme-shadow" data-service-key="product-strategy"
+                        aria-label="View details for product strategy">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-3.svg" alt="Analytics canvas" loading="lazy">
-                            <span class="service-card__badge">Insight Mesh</span>
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+                                alt="Product strategy workshop" loading="lazy">
+                            <span class="service-card__badge">Playbook</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Analytics Story Canvas</h5>
-                            <p>Real-time insight layers that surface the metrics behind every interaction and conversion.</p>
+                            <h5>Product Strategy Sprints</h5>
+                            <p>Audience research, positioning, and roadmap prioritisation aligned with measurable outcome
+                                checkpoints.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <button type="button" class="service-card theme-shadow" data-service-key="customizers"
-                        aria-label="View details for product customizers">
+                    <button type="button" class="service-card theme-shadow" data-service-key="prototyping"
+                        aria-label="View details for interactive prototypes">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-4.svg" alt="Product customizer interface"
-                                loading="lazy">
-                            <span class="service-card__badge">Config Lab</span>
+                            <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+                                alt="Interactive prototypes" loading="lazy">
+                            <span class="service-card__badge">Prototype</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Dynamic Product Customizers</h5>
-                            <p>Immersive selectors and scenario builders that let people explore versions, pricing, and
-                                outcomes.</p>
+                            <h5>Interactive Prototype Theatre</h5>
+                            <p>Scenario-driven prototypes with video, motion, and data hooks so teams can sell before
+                                shipping.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
-                    <button type="button" class="service-card theme-shadow" data-service-key="automation"
-                        aria-label="View details for launch automation pipelines">
+                    <button type="button" class="service-card theme-shadow" data-service-key="brand-identity"
+                        aria-label="View details for brand identity">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-5.svg" alt="Automation pipelines"
-                                loading="lazy">
-                            <span class="service-card__badge">Launch Ops</span>
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                                alt="Brand identity exploration" loading="lazy">
+                            <span class="service-card__badge">Identity</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Launch Automation Pipelines</h5>
-                            <p>Notifications, CRM sync, and analytics instrumentation ready from the first live visitor.</p>
+                            <h5>Brand &amp; Launch Identity</h5>
+                            <p>Voice, motion, and visual systems that make every presentation, deck, and video unmistakably
+                                yours.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <button type="button" class="service-card theme-shadow" data-service-key="support"
-                        aria-label="View details for support systems">
+                    <button type="button" class="service-card theme-shadow" data-service-key="growth-analytics"
+                        aria-label="View details for growth analytics">
                         <div class="service-card__media">
-                            <img src="./assets/images/aithentic-capability-6.svg" alt="Support runway"
-                                loading="lazy">
-                            <span class="service-card__badge">Care Desk</span>
+                            <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=900&q=80"
+                                alt="Growth analytics dashboard" loading="lazy">
+                            <span class="service-card__badge">Insights</span>
                         </div>
                         <div class="service-card__content">
-                            <h5>Always-on Support Systems</h5>
-                            <p>Enablement docs, showreels, and training portals so every team member can pitch with
-                                confidence.</p>
+                            <h5>Growth Analytics &amp; Enablement</h5>
+                            <p>Revenue dashboards, enablement hubs, and automation that keep teams aligned after launch.</p>
                             <span class="service-card__cta">View Details</span>
                         </div>
                     </button>
@@ -333,59 +372,60 @@
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
                     <div class="portfolio-item image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-case-1.svg" alt="Showcase interface for Aurora Labs"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=1000&q=80"
+                                alt="Product dashboard concept" loading="lazy">
                         </div>
-                        <a href="./assets/images/aithentic-case-1.svg" data-fancybox="gallery"
-                            data-caption="Aurora Labs launch system" class="searchbox"><i
+                        <a href="https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Aurora launch operating system" class="searchbox"><i
                                 class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-capability-4.svg" alt="Immersive product customizer"
-                                loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80"
+                                alt="SaaS marketing site" loading="lazy" />
                         </div>
-                        <a href="./assets/images/aithentic-capability-4.svg" data-fancybox="gallery"
-                            data-caption="Custom configuration studio" class="searchbox"><i
+                        <a href="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Marketing website system" class="searchbox"><i
                                 class="ri-search-2-line"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
                     <div class="portfolio-item image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-case-2.svg" alt="Insight dashboard for Nimbus"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1580894894513-541e0681b59d?auto=format&fit=crop&w=1000&q=80"
+                                alt="Product analytics dashboard" loading="lazy">
                         </div>
-                        <a href="./assets/images/aithentic-case-2.svg" data-fancybox="gallery"
-                            data-caption="Nimbus analytics portal" class="searchbox"><i
+                        <a href="https://images.unsplash.com/photo-1580894894513-541e0681b59d?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Analytics storytelling canvas" class="searchbox"><i
                                 class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-capability-2.svg" alt="Interactive prototype theatre"
-                                loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80"
+                                alt="Mobile UI screens" loading="lazy" />
                         </div>
-                        <a href="./assets/images/aithentic-capability-2.svg" data-fancybox="gallery"
-                            data-caption="Live prototype stage" class="searchbox"><i
+                        <a href="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Mobile product showcase" class="searchbox"><i
                                 class="ri-search-2-line"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
                     <div class="portfolio-item image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-case-3.svg" alt="Interactive retail twin"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1618005198919-74ea01bf1e5c?auto=format&fit=crop&w=1000&q=80"
+                                alt="Figma web design concept" loading="lazy">
                         </div>
-                        <a href="./assets/images/aithentic-case-3.svg" data-fancybox="gallery"
-                            data-caption="Retail digital twin" class="searchbox"><i class="ri-search-2-line"></i></a>
+                        <a href="https://images.unsplash.com/photo-1618005198919-74ea01bf1e5c?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Launch website art direction" class="searchbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/aithentic-capability-6.svg" alt="Knowledge enablement system"
-                                loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"
+                                alt="Team collaboration board" loading="lazy" />
                         </div>
-                        <a href="./assets/images/aithentic-capability-6.svg" data-fancybox="gallery"
-                            data-caption="Enablement partner hub" class="searchbox"><i
+                        <a href="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80"
+                            data-fancybox="gallery" data-caption="Enablement command centre" class="searchbox"><i
                                 class="ri-search-2-line"></i></a>
                     </div>
                 </div>
@@ -461,7 +501,7 @@
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
                             </div>
-                            <p style="color: white;">The team didn?t just design; they challenged our GTM, layered
+                            <p style="color: white;">The team didn't just design; they challenged our GTM, layered
                                 analytics, and gave us a launch hub that keeps evolving.</p>
                         </div>
                         <div class="review-person d-flex align-items-center mt-4">
@@ -485,13 +525,13 @@
                                 <i class="ri-star-fill"></i>
                             </div>
                             <p style="color: white;">Motion, story, and engineering under one roof. Our investors called
-                                the experience ?category defining?.</p>
+                                the experience "category defining".</p>
                         </div>
                         <div class="review-person d-flex align-items-center mt-4">
                             <img class="rounded-circle" src="./assets/images/avatar-4.jpg" alt="reviews 4"
                                 loading="lazy">
                             <div class="ms-3">
-                                <h5>Lucas Mart?n</h5>
+                                <h5>Lucas Martin</h5>
                                 <small>Founder, Sequence Labs</small>
                             </div>
                         </div>
@@ -530,7 +570,7 @@
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
                             </div>
-                            <p style="color: white;">Best partner we?ve had for web launches. They anticipate what your
+                            <p style="color: white;">Best partner we've had for web launches. They anticipate what your
                                 customer will ask before you do.</p>
                         </div>
                         <div class="review-person d-flex align-items-center mt-4">
@@ -552,9 +592,9 @@
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 text-white fw-semibold">Let?s build your launch layer</h1>
+                        <h1 class="display-4 text-white fw-semibold">Let's build your launch layer</h1>
                         <div class="line text-white"></div>
-                        <p class="text-white">Share your roadmap and we?ll design a product showcase that guides people
+                        <p class="text-white">Share your roadmap and we'll design a product showcase that guides people
                             from curiosity to conviction.</p>
                     </div>
                 </div>
@@ -638,8 +678,8 @@
                     <article class="blog-card theme-shadow h-100" data-article-key="immersive-demos">
                         <div class="blog-card__media image-zoom">
                             <div class="image-zoom-wrapper">
-                                <img src="./assets/images/aithentic-capability-1.svg" alt="Immersive demo systems"
-                                    loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+                                    alt="Immersive demo systems" loading="lazy">
                             </div>
                             <span class="blog-card__category">Playbooks</span>
                         </div>
@@ -654,8 +694,8 @@
                     <article class="blog-card theme-shadow h-100" data-article-key="launch-analytics">
                         <div class="blog-card__media image-zoom">
                             <div class="image-zoom-wrapper">
-                                <img src="./assets/images/aithentic-capability-3.svg" alt="Launch analytics canvas"
-                                    loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                                    alt="Launch analytics canvas" loading="lazy">
                             </div>
                             <span class="blog-card__category">Insights</span>
                         </div>
@@ -670,8 +710,8 @@
                     <article class="blog-card theme-shadow h-100" data-article-key="team-enablement">
                         <div class="blog-card__media image-zoom">
                             <div class="image-zoom-wrapper">
-                                <img src="./assets/images/aithentic-capability-6.svg" alt="Enablement systems"
-                                    loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+                                    alt="Enablement systems" loading="lazy">
                             </div>
                             <span class="blog-card__category">Operations</span>
                         </div>
