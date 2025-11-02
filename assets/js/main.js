@@ -224,50 +224,25 @@ function initHeroAnimations() {
         return;
     }
 
-    const setSlideState = (slide, values) => {
-        if (!slide) {
-            return;
-        }
-
-        slide.querySelectorAll('[data-hero-title], [data-hero-subtitle], [data-hero-copy], [data-hero-cta] .btn').forEach((el) => {
-            gsap.set(el, values);
-        });
-    };
-
     const animateSlide = (slide) => {
         if (!slide) {
             return;
         }
 
-        const subtitle = slide.querySelector('[data-hero-subtitle]');
-        const title = slide.querySelector('[data-hero-title]');
-        const copy = slide.querySelector('[data-hero-copy]');
-        const buttons = slide.querySelectorAll('[data-hero-cta] .btn');
+        const elements = slide.querySelectorAll('[data-hero-subtitle], [data-hero-title], [data-hero-copy], [data-hero-cta] .btn');
 
-        const timeline = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.9 } });
-        if (subtitle) {
-            timeline.to(subtitle, { opacity: 1, y: 0 });
-        }
-        if (title) {
-            timeline.to(title, { opacity: 1, y: 0 }, subtitle ? '-=0.6' : '<');
-        }
-        if (copy) {
-            timeline.to(copy, { opacity: 1, y: 0 }, '-=0.55');
-        }
-        if (buttons.length) {
-            timeline.to(buttons, { opacity: 1, y: 0, stagger: 0.12 }, '-=0.5');
-        }
+        elements.forEach((element, index) => {
+            gsap.fromTo(element, { opacity: 0, y: 40 }, {
+                opacity: 1,
+                y: 0,
+                duration: 0.85,
+                ease: 'power3.out',
+                delay: index * 0.12
+            });
+        });
     };
 
-    const slides = carousel.querySelectorAll('.carousel-item');
-    slides.forEach((slide) => setSlideState(slide, { opacity: 0, y: 40 }));
-
-    const activeSlide = carousel.querySelector('.carousel-item.active');
-    animateSlide(activeSlide);
-
-    carousel.addEventListener('slide.bs.carousel', (event) => {
-        setSlideState(event.relatedTarget, { opacity: 0, y: 40 });
-    });
+    animateSlide(carousel.querySelector('.carousel-item.active'));
 
     carousel.addEventListener('slid.bs.carousel', (event) => {
         animateSlide(event.relatedTarget);
